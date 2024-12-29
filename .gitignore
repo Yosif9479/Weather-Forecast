@@ -1,0 +1,7 @@
+﻿.idea
+.vs
+.vscode
+/[Bb]in
+/[Oo]bj
+/[Pp]roperties
+**/*.user

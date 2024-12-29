@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WeatherForecast.MainPage"
+             xmlns:viewModels="clr-namespace:WeatherForecast.ViewModels">
+    <ContentPage.BindingContext>
+        <viewModels:MainPageViewModel/>
+    </ContentPage.BindingContext>
+    <AbsoluteLayout BackgroundColor="#343D4B">
+        <Label TextColor="White" FontSize="30" FontFamily="Montserrat-Bold" Text="Weather Forecast" AbsoluteLayout.LayoutBounds="0.5, 0.15" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+        <AbsoluteLayout AbsoluteLayout.LayoutBounds="0.5, 0.5, 0.85, 0.4" AbsoluteLayout.LayoutFlags="All">
+            <Border BackgroundColor="#222831" StrokeThickness="0" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="25"/>
+                </Border.StrokeShape>
+            </Border>
+            <AbsoluteLayout AbsoluteLayout.LayoutBounds="1, 0.5, 0.4, 1" AbsoluteLayout.LayoutFlags="All">
+                <Label Padding="0, 20" FontSize="10" TextColor="White" FontFamily="Montserrat-Bold" Text="PRECIPITATION"/>
+                <Label Padding="90, 20" FontSize="10" TextColor="White" FontFamily="Montserrat-Medium" Text="0%"/>
+                <Label Padding="0, 50" FontSize="10" TextColor="White" FontFamily="Montserrat-Bold" Text="HUMIDITY"/>
+                <Label Padding="90, 50" FontSize="10" TextColor="White" FontFamily="Montserrat-Medium" Text="42%"/>
+                <Label Padding="0, 80" FontSize="10" TextColor="White" FontFamily="Montserrat-Bold" Text="WIND"/>
+                <Label Padding="80, 80" FontSize="10" TextColor="White" FontFamily="Montserrat-Medium" Text="3km/h"/>
+                <AbsoluteLayout AbsoluteLayout.LayoutBounds="0, 0.9, 0.9, 0.6" LayoutFlags="All">
+                    <Grid AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="25*"/>
+                            <RowDefinition Height="25*"/>
+                            <RowDefinition Height="25*"/>
+                            <RowDefinition Height="25*"/>
+                        </Grid.RowDefinitions>
+                        <Border Grid.Row="0" BackgroundColor="White" StrokeThickness="1" Stroke="White">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="10"/>
+                            </Border.StrokeShape>
+                            <Border.Shadow>
+                                <Shadow Brush="Black" Radius="4" Opacity="0.5"/>
+                            </Border.Shadow>
+                            <HorizontalStackLayout>
+                                <Label TextColor="#343D4B" Padding="10, 15, 0, 0" FontSize="10" FontFamily="Montserrat-Medium" Text="Tue"/>
+                                <Label TextColor="#343D4B" Padding="10, 13, 0, 0" FontSize="12" FontFamily="Montserrat-Bold" Text="30 °C"/>
+                            </HorizontalStackLayout>
+                        </Border>
+                        <Border Grid.Row="1" BackgroundColor="#272E37" StrokeThickness="1" Stroke="#272E37">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="10"/>
+                            </Border.StrokeShape>
+                            <Border.Shadow>
+                                <Shadow Brush="Black" Radius="4" Opacity="0.5"/>
+                            </Border.Shadow>
+                            <HorizontalStackLayout>
+                                <Label TextColor="White" Padding="10, 15, 0, 0" FontSize="10" FontFamily="Montserrat-Medium" Text="Wed"/>
+                                <Label TextColor="White" Padding="10, 13, 0, 0" FontSize="12" FontFamily="Montserrat-Bold" Text="22 °C"/>
+                            </HorizontalStackLayout>
+                        </Border>
+                        <Border Grid.Row="2" BackgroundColor="#272E37" StrokeThickness="1" Stroke="#272E37">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="10"/>
+                            </Border.StrokeShape>
+                            <Border.Shadow>
+                                <Shadow Brush="Black" Radius="4" Opacity="0.5"/>
+                            </Border.Shadow>
+                            <HorizontalStackLayout>
+                                <Label TextColor="White" Padding="10, 15, 0, 0" FontSize="10" FontFamily="Montserrat-Medium" Text="Thu"/>
+                                <Label TextColor="White" Padding="10, 13, 0, 0" FontSize="12" FontFamily="Montserrat-Bold" Text="06 °C"/>
+                            </HorizontalStackLayout>
+                        </Border>
+                        <Border Grid.Row="3" BackgroundColor="#272E37" StrokeThickness="1" Stroke="#272E37">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="10"/>
+                            </Border.StrokeShape>
+                            <Border.Shadow>
+                                <Shadow Brush="Black" Radius="4" Opacity="0.5"/>
+                            </Border.Shadow>
+                            <HorizontalStackLayout>
+                                <Label TextColor="White" Padding="10, 15, 0, 0" FontSize="10" FontFamily="Montserrat-Medium" Text="Fry"/>
+                                <Label TextColor="White" Padding="10, 13, 0, 0" FontSize="12" FontFamily="Montserrat-Bold" Text="26 °C"/>
+                            </HorizontalStackLayout>
+                        </Border>
+                    </Grid>
+                </AbsoluteLayout>
+            </AbsoluteLayout>
+        </AbsoluteLayout>
+        <AbsoluteLayout AbsoluteLayout.LayoutBounds="0.1, 0.5, 0.5, 0.4" AbsoluteLayout.LayoutFlags="All">
+            <Border StrokeThickness="0" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="20"/>
+                </Border.StrokeShape>
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0, 0" EndPoint="1, 1">
+                        <GradientStop Color="#88EBEF" Offset="0.0"/>
+                        <GradientStop Color="#535BE6" Offset="1.0"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Image Source="beach.png" Opacity="0.2" Aspect="AspectFill" VerticalOptions="Fill" HorizontalOptions="Fill"/>
+            </Border>
+            <Label Padding="20, 20, 0, 0" TextColor="White" FontSize="18" FontFamily="Montserrat-Bold" Text="Tuesday"/>
+            <Label Padding="20, 45, 0, 0" TextColor="White" FontSize="10" FontFamily="Montserrat-Medium" Text="20 Jun 2024"/>
+            <Label Padding="20, 200" TextColor="White" FontSize="24" FontFamily="Montserrat-Bold" Text="29 °C"/>
+            <Label Padding="20, 235" TextColor="White" FontSize="16" FontFamily="Montserrat-Bold" Text="Sunny"/>
+        </AbsoluteLayout>
+    </AbsoluteLayout>
+</ContentPage>
