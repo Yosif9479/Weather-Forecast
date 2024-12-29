@@ -99,5 +99,6 @@
             <Label Padding="20, 200" TextColor="White" FontSize="24" FontFamily="Montserrat-Bold" Text="29 °C"/>
             <Label Padding="20, 235" TextColor="White" FontSize="16" FontFamily="Montserrat-Bold" Text="Sunny"/>
         </AbsoluteLayout>
+        <Button TextColor="Black" FontFamily="Montserrat-Bold" FontSize="20" Text="Refresh" AbsoluteLayout.LayoutBounds="0.5, 0.85" AbsoluteLayout.LayoutFlags="PositionProportional"/>
     </AbsoluteLayout>
 </ContentPage>

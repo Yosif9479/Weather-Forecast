@@ -62,6 +62,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="dotenv.net" Version="3.2.1" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.0" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />

@@ -1,6 +1,7 @@
 ﻿.idea
 .vs
 .vscode
+.env
 /[Bb]in
 /[Oo]bj
 /[Pp]roperties
